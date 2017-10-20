@@ -10,7 +10,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.3</release>
   <api>1.0.0</api>
@@ -33,7 +33,7 @@
       </dir> <!-- /lib/Horde/JavascriptMinify/Jsmin -->
       <file name="Jsmin.php" role="php" />
      </dir> <!-- /lib/Horde/JavascriptMinify -->
-     </dir> <!-- /lib/Horde -->
+    </dir> <!-- /lib/Horde -->
    </dir> <!-- /lib -->
    <dir name="test">
     <dir name="Horde">
@@ -42,10 +42,9 @@
        <file name="AllTests.php" role="test" />
        <file name="bootstrap.php" role="test" />
        <file name="JsminTest.php" role="test" />
-       <file name="phpunit.xml" role="test" />
       </dir> <!-- /test/Horde/JavascriptMinify/Jsmin -->
      </dir> <!-- /test/Horde/JavascriptMinify -->
-     </dir> <!-- /test/Horde -->
+    </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
    <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
@@ -79,8 +78,7 @@
    <install as="Horde/JavascriptMinify/Jsmin/AllTests.php" name="test/Horde/JavascriptMinify/Jsmin/AllTests.php" />
    <install as="Horde/JavascriptMinify/Jsmin/bootstrap.php" name="test/Horde/JavascriptMinify/Jsmin/bootstrap.php" />
    <install as="Horde/JavascriptMinify/Jsmin/JsminTest.php" name="test/Horde/JavascriptMinify/Jsmin/JsminTest.php" />
-   <install as="Horde/JavascriptMinify/Jsmin/phpunit.xml" name="test/Horde/JavascriptMinify/Jsmin/phpunit.xml" />
-   </filelist>
+  </filelist>
  </phprelease>
  <changelog>
   <release>
@@ -129,7 +127,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="">JSMin</license>
    <notes>
 * 
