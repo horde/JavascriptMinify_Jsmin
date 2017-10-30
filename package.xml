@@ -10,7 +10,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2016-02-01</date>
+ <date>2017-10-30</date>
  <version>
   <release>1.0.3</release>
   <api>1.0.0</api>
@@ -29,6 +29,7 @@
     <dir name="Horde">
      <dir name="JavascriptMinify">
       <dir name="Jsmin">
+       <file name="CHANGES" role="doc" />
        <file name="LICENSE" role="doc" />
       </dir> <!-- /doc/Horde/JavascriptMinify/Jsmin -->
      </dir> <!-- /doc/Horde/JavascriptMinify -->
@@ -81,6 +82,7 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="CHANGES" name="doc/Horde/JavascriptMinify/Jsmin/CHANGES" />
    <install as="LICENSE" name="doc/Horde/JavascriptMinify/Jsmin/LICENSE" />
    <install as="Horde/JavascriptMinify/Jsmin.php" name="lib/Horde/JavascriptMinify/Jsmin.php" />
    <install as="Horde/JavascriptMinify/Jsmin/Minifier.php" name="lib/Horde/JavascriptMinify/Jsmin/Minifier.php" />
@@ -137,7 +139,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2016-02-01</date>
+   <date>2017-10-30</date>
    <license uri="">JSMin</license>
    <notes>
 * 
