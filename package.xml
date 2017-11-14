@@ -52,7 +52,6 @@
        <file name="AllTests.php" role="test" />
        <file name="bootstrap.php" role="test" />
        <file name="JsminTest.php" role="test" />
-       <file name="phpunit.xml" role="test" />
       </dir> <!-- /test/Horde/JavascriptMinify/Jsmin -->
      </dir> <!-- /test/Horde/JavascriptMinify -->
      </dir> <!-- /test/Horde -->
@@ -87,7 +86,6 @@
    <install as="Horde/JavascriptMinify/Jsmin/AllTests.php" name="test/Horde/JavascriptMinify/Jsmin/AllTests.php" />
    <install as="Horde/JavascriptMinify/Jsmin/bootstrap.php" name="test/Horde/JavascriptMinify/Jsmin/bootstrap.php" />
    <install as="Horde/JavascriptMinify/Jsmin/JsminTest.php" name="test/Horde/JavascriptMinify/Jsmin/JsminTest.php" />
-   <install as="Horde/JavascriptMinify/Jsmin/phpunit.xml" name="test/Horde/JavascriptMinify/Jsmin/phpunit.xml" />
    </filelist>
  </phprelease>
  <changelog>
