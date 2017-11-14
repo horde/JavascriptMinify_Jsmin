@@ -1,8 +1,8 @@
 {
     "name": "horde/javascriptminify-jsmin",
-    "description": "Horde Javascript Minifier - Jsmin PHP Driver",
+    "description": "JavaScript minification library - JSMin driver",
     "type": "library",
-    "homepage": "https://pear.horde.org",
+    "homepage": "https://www.horde.org",
     "license": "JSMin",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "version": "1.0.3",
-    "time": "2016-02-01",
+    "time": "2017-11-14",
     "repositories": [
         {
             "type": "pear",
