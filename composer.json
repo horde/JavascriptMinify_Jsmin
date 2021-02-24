@@ -21,8 +21,8 @@
     ],
     "require": {
         "horde/horde-installer-plugin": "*",
-        "php": "^5.3 || ^7",
-        "horde/javascriptminify": "^1.1"
+        "php": "^7",
+        "horde/javascriptminify": "^2"
     },
     "suggest": {},
     "autoload": {

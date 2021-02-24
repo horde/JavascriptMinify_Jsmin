@@ -26,6 +26,6 @@ license:
   uri: ~
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/Horde_JavascriptMinify: ^1.1
+    php: ^7
+    composer:
+      horde/javascriptminify: ^2

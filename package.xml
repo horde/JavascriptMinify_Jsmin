@@ -61,20 +61,13 @@
  <dependencies>
   <required>
    <php>
-    <min>5.3.0</min>
+    <min>7.0.0</min>
     <max>8.0.0alpha1</max>
     <exclude>8.0.0alpha1</exclude>
    </php>
    <pearinstaller>
     <min>1.7.0</min>
    </pearinstaller>
-   <package>
-    <name>Horde_JavascriptMinify</name>
-    <channel>pear.horde.org</channel>
-    <min>1.1.0</min>
-    <max>2.0.0alpha1</max>
-    <exclude>2.0.0alpha1</exclude>
-   </package>
   </required>
  </dependencies>
  <phprelease>
@@ -92,10 +85,12 @@
   <release>
    <version>
     <release>1.0.0</release>
-    <api>1.0.0</api></version>
+    <api>1.0.0</api>
+   </version>
    <stability>
     <release>stable</release>
-    <api>stable</api></stability>
+    <api>stable</api>
+   </stability>
    <date>2014-03-03</date>
    <license uri="">JSMin</license>
    <notes>
@@ -105,10 +100,12 @@
   <release>
    <version>
     <release>1.0.1</release>
-    <api>1.0.0</api></version>
+    <api>1.0.0</api>
+   </version>
    <stability>
     <release>stable</release>
-    <api>stable</api></stability>
+    <api>stable</api>
+   </stability>
    <date>2014-05-02</date>
    <license uri="">JSMin</license>
    <notes>
@@ -118,10 +115,12 @@
   <release>
    <version>
     <release>1.0.2</release>
-    <api>1.0.0</api></version>
+    <api>1.0.0</api>
+   </version>
    <stability>
     <release>stable</release>
-    <api>stable</api></stability>
+    <api>stable</api>
+   </stability>
    <date>2016-02-01</date>
    <license uri="">JSMin</license>
    <notes>
@@ -131,11 +130,13 @@
   <release>
    <version>
     <release>2.0.0alpha1</release>
-    <api>2.0.0alpha1</api></version>
+    <api>2.0.0alpha1</api>
+   </version>
    <stability>
     <release>alpha</release>
-    <api>alpha</api></stability>
-   <date>2021-02-24</date>
+    <api>alpha</api>
+   </stability>
+   <date>2017-10-20</date>
    <license uri="">JSMin</license>
    <notes>
 * 
