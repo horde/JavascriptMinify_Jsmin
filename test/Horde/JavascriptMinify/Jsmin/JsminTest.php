@@ -8,8 +8,11 @@
  * @package    JavascriptMinify_Jsmin
  * @subpackage UnitTests
  */
+namespace Horde\JavascriptMinify\Jsmin;
+use PHPUnit\Framework\TestCase;
+use \Horde_JavascriptMinify_Jsmin;
 
-class Horde_JavascriptMinify_Jsmin_JsminTest extends PHPUnit_Framework_TestCase
+class JsminTest extends TestCase
 {
     public function testJsmin()
     {
