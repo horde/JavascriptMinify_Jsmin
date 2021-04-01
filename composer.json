@@ -21,6 +21,7 @@
     ],
     "require": {
         "php": "^7",
+        "horde/log": "^3 || dev-FRAMEWORK_6_0",
         "horde/javascriptminify": "^2 || dev-FRAMEWORK_6_0"
     },
     "suggest": {},
