@@ -10,7 +10,7 @@
   <email>slusarz@horde.org</email>
   <active>no</active>
  </lead>
- <date>2021-03-13</date>
+ <date>2022-11-14</date>
  <version>
   <release>2.0.0alpha4</release>
   <api>2.0.0alpha1</api>
@@ -21,10 +21,18 @@
  </stability>
  <license>JSMin</license>
  <notes>
-* 
+* |+
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name=".github">
+    <dir name="workflows">
+     <file name="ci.yml" role="php" />
+     <file name="phpdoc.yml" role="php" />
+     <file name="release.yml" role="php" />
+     <file name="update-satis.yml" role="php" />
+    </dir> <!-- /.github/workflows -->
+   </dir> <!-- /.github -->
    <dir name="doc">
     <dir name="Horde">
      <dir name="JavascriptMinify">
@@ -61,9 +69,9 @@
  <dependencies>
   <required>
    <php>
-    <min>7.0.0</min>
-    <max>8.0.0alpha1</max>
-    <exclude>8.0.0alpha1</exclude>
+    <min>7.4.0</min>
+    <max>9.0.0alpha1</max>
+    <exclude>9.0.0alpha1</exclude>
    </php>
    <pearinstaller>
     <min>1.7.0</min>
@@ -72,6 +80,10 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="workflows/ci.yml" name=".github/workflows/ci.yml" />
+   <install as="workflows/phpdoc.yml" name=".github/workflows/phpdoc.yml" />
+   <install as="workflows/release.yml" name=".github/workflows/release.yml" />
+   <install as="workflows/update-satis.yml" name=".github/workflows/update-satis.yml" />
    <install as="CHANGES" name="doc/Horde/JavascriptMinify/Jsmin/CHANGES" />
    <install as="Horde/JavascriptMinify/Jsmin.php" name="lib/Horde/JavascriptMinify/Jsmin.php" />
    <install as="Horde/JavascriptMinify/Jsmin/Minifier.php" name="lib/Horde/JavascriptMinify/Jsmin/Minifier.php" />
@@ -82,12 +94,6 @@
   </filelist>
  </phprelease>
  <changelog>
- 
- 
- 
- 
- 
- 
   <release>
    <version>
     <release>1.0.0</release>
@@ -190,7 +196,7 @@
    <date>2021-03-13</date>
    <license uri="">JSMin</license>
    <notes>
-* 
+* |+
    </notes>
   </release>
  </changelog>
