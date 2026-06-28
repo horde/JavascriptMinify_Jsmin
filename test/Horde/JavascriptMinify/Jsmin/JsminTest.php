@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Javascript minification tests.
  *
@@ -8,24 +9,29 @@
  * @package    JavascriptMinify_Jsmin
  * @subpackage UnitTests
  */
-namespace Horde\JavascriptMinify\Jsmin;
-use PHPUnit\Framework\TestCase;
-use \Horde_JavascriptMinify_Jsmin;
 
+namespace Horde\JavascriptMinify\Jsmin;
+
+use PHPUnit\Framework\TestCase;
+use Horde_JavascriptMinify_Jsmin;
+
+/**
+ * @coversNothing
+ */
 class JsminTest extends TestCase
 {
     public function testJsmin()
     {
         $javascript = <<<EOT
-function foo(bar)
-{
-    if (bar == 2) {
-        return true;
-    } else {
-        return false;
-    }
-}
-EOT;
+            function foo(bar)
+            {
+                if (bar == 2) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            EOT;
 
         $jsmin = new Horde_JavascriptMinify_Jsmin($javascript);
         $this->assertEquals(
@@ -38,35 +44,35 @@ EOT;
     public function testJsmin2()
     {
         $javascript = <<<EOT
-var is = {
-    ie:      navigator.appName == 'Microsoft Internet Explorer',
-    java:    navigator.javaEnabled(),
-    ns:      navigator.appName == 'Netscape',
-    ua:      navigator.userAgent.toLowerCase(),
-    version: parseFloat(navigator.appVersion.substr(21)) ||
-             parseFloat(navigator.appVersion),
-    win:     navigator.platform == 'Win32'
-}
+            var is = {
+                ie:      navigator.appName == 'Microsoft Internet Explorer',
+                java:    navigator.javaEnabled(),
+                ns:      navigator.appName == 'Netscape',
+                ua:      navigator.userAgent.toLowerCase(),
+                version: parseFloat(navigator.appVersion.substr(21)) ||
+                         parseFloat(navigator.appVersion),
+                win:     navigator.platform == 'Win32'
+            }
 
-is.mac = is.ua.indexOf('mac') >= 0;
+            is.mac = is.ua.indexOf('mac') >= 0;
 
-if (is.ua.indexOf('opera') >= 0) {
-    is.ie = is.ns = false;
-    is.opera = true;
-}
+            if (is.ua.indexOf('opera') >= 0) {
+                is.ie = is.ns = false;
+                is.opera = true;
+            }
 
-if (is.ua.indexOf('gecko') >= 0) {
-    is.ie = is.ns = false;
-    is.gecko = true;
-}
-EOT;
+            if (is.ua.indexOf('gecko') >= 0) {
+                is.ie = is.ns = false;
+                is.gecko = true;
+            }
+            EOT;
 
         $jsmin = new Horde_JavascriptMinify_Jsmin($javascript);
         $this->assertEquals(
             "var is={ie:navigator.appName=='Microsoft Internet Explorer',java:navigator.javaEnabled(),ns:navigator.appName=='Netscape',ua:navigator.userAgent.toLowerCase(),version:parseFloat(navigator.appVersion.substr(21))||parseFloat(navigator.appVersion),win:navigator.platform=='Win32'}
 is.mac=is.ua.indexOf('mac')>=0;if(is.ua.indexOf('opera')>=0){is.ie=is.ns=false;is.opera=true;}
 if(is.ua.indexOf('gecko')>=0){is.ie=is.ns=false;is.gecko=true;}",
-             $jsmin->minify()
+            $jsmin->minify()
         );
     }
 
@@ -77,8 +83,8 @@ if(is.ua.indexOf('gecko')>=0){is.ie=is.ns=false;is.gecko=true;}",
 
         $this->assertEquals(
             'function foo(a){return/\//.test(a);}',
-             $jsmin->minify()
-         );
+            $jsmin->minify()
+        );
 
         $js2 = 'var a = 0, b = c / 100 | 0;';
         $jsmin2 = new Horde_JavascriptMinify_Jsmin($js2);
