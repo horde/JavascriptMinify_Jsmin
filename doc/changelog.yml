@@ -1,4 +1,14 @@
 ---
+2.0.1:
+  api: 2.0.1
+  state:
+    release: stable
+    api: stable
+  date: 2026-07-01
+  license:
+    identifier: JSON
+    uri: https://spdx.org/licenses/JSON.html
+  notes: "chore: Clarify license. JSMin's license is SPDX JSON license.\nchore: refresh CI bootstrap"
 2.0.0:
   api: 2.0.0
   state:
