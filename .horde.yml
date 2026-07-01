@@ -21,8 +21,8 @@ state:
   release: stable
   api: alpha
 license:
-  identifier: JSMin
-  uri: ~
+  identifier: JSON
+  uri: https://www.json.org/license.html
 dependencies:
   required:
     php: ^7.4 || ^8
